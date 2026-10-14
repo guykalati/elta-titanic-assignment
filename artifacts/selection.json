@@ -1,0 +1,560 @@
+{
+  "criterion": "OOF accuracy, then log loss",
+  "selected": {
+    "name": "extended_torch_0",
+    "kind": "torch",
+    "level": "extended",
+    "hidden": 0,
+    "epochs": 200,
+    "lr": 0.01,
+    "weight_decay": 0.03
+  },
+  "comparison": [
+    {
+      "name": "extended_torch_0",
+      "kind": "torch",
+      "level": "extended",
+      "hidden": 0,
+      "epochs": 200,
+      "lr": 0.01,
+      "weight_decay": 0.03,
+      "accuracy": 0.8286516853932584,
+      "precision": 0.805668016194332,
+      "recall": 0.7289377289377289,
+      "f1": 0.7653846153846153,
+      "roc_auc": 0.8750740527505904,
+      "brier": 0.12755085138967034,
+      "log_loss": 0.4119959638371885,
+      "confusion_matrix": [
+        [
+          391,
+          48
+        ],
+        [
+          74,
+          199
+        ]
+      ],
+      "accuracy_ci95": [
+        0.7992275753358298,
+        0.8545483438060586
+      ],
+      "passengers": 712,
+      "fold_accuracy_std": 0.021292259104565427
+    },
+    {
+      "name": "eda_torch_16",
+      "kind": "torch",
+      "level": "eda",
+      "hidden": 16,
+      "epochs": 180,
+      "lr": 0.01,
+      "weight_decay": 0.03,
+      "accuracy": 0.827247191011236,
+      "precision": 0.8232758620689655,
+      "recall": 0.6996336996336996,
+      "f1": 0.7564356435643564,
+      "roc_auc": 0.8682361677805869,
+      "brier": 0.12589096454792337,
+      "log_loss": 0.4289328023656024,
+      "confusion_matrix": [
+        [
+          398,
+          41
+        ],
+        [
+          82,
+          191
+        ]
+      ],
+      "accuracy_ci95": [
+        0.797741875909516,
+        0.8532401290480055
+      ],
+      "passengers": 712,
+      "fold_accuracy_std": 0.020499117997585345
+    },
+    {
+      "name": "eda_torch_32",
+      "kind": "torch",
+      "level": "eda",
+      "hidden": 32,
+      "epochs": 120,
+      "lr": 0.01,
+      "weight_decay": 0.1,
+      "accuracy": 0.827247191011236,
+      "precision": 0.8205128205128205,
+      "recall": 0.7032967032967034,
+      "f1": 0.757396449704142,
+      "roc_auc": 0.8634634158552154,
+      "brier": 0.12835832863156152,
+      "log_loss": 0.43845063952717056,
+      "confusion_matrix": [
+        [
+          397,
+          42
+        ],
+        [
+          81,
+          192
+        ]
+      ],
+      "accuracy_ci95": [
+        0.797741875909516,
+        0.8532401290480055
+      ],
+      "passengers": 712,
+      "fold_accuracy_std": 0.018771927733829526
+    },
+    {
+      "name": "eda_torch_0",
+      "kind": "torch",
+      "level": "eda",
+      "hidden": 0,
+      "epochs": 200,
+      "lr": 0.01,
+      "weight_decay": 0.03,
+      "accuracy": 0.824438202247191,
+      "precision": 0.8057851239669421,
+      "recall": 0.7142857142857143,
+      "f1": 0.7572815533980582,
+      "roc_auc": 0.8771558737390173,
+      "brier": 0.12516083685245558,
+      "log_loss": 0.4027221725819688,
+      "confusion_matrix": [
+        [
+          392,
+          47
+        ],
+        [
+          78,
+          195
+        ]
+      ],
+      "accuracy_ci95": [
+        0.7947724542166372,
+        0.85062172237215
+      ],
+      "passengers": 712,
+      "fold_accuracy_std": 0.02642374312058059
+    },
+    {
+      "name": "eda_forest",
+      "kind": "forest",
+      "level": "eda",
+      "accuracy": 0.824438202247191,
+      "precision": 0.8008130081300813,
+      "recall": 0.7216117216117216,
+      "f1": 0.7591522157996147,
+      "roc_auc": 0.8811776681936135,
+      "brier": 0.1227451867459501,
+      "log_loss": 0.40451961096815797,
+      "confusion_matrix": [
+        [
+          390,
+          49
+        ],
+        [
+          76,
+          197
+        ]
+      ],
+      "accuracy_ci95": [
+        0.7947724542166372,
+        0.85062172237215
+      ],
+      "passengers": 712,
+      "fold_accuracy_std": 0.027856510952192416
+    },
+    {
+      "name": "extended_forest",
+      "kind": "forest",
+      "level": "extended",
+      "accuracy": 0.824438202247191,
+      "precision": 0.8032786885245902,
+      "recall": 0.717948717948718,
+      "f1": 0.758220502901354,
+      "roc_auc": 0.8808731132193547,
+      "brier": 0.12220601940712666,
+      "log_loss": 0.4045274397337163,
+      "confusion_matrix": [
+        [
+          391,
+          48
+        ],
+        [
+          77,
+          196
+        ]
+      ],
+      "accuracy_ci95": [
+        0.7947724542166372,
+        0.85062172237215
+      ],
+      "passengers": 712,
+      "fold_accuracy_std": 0.024019218527113417
+    },
+    {
+      "name": "eda_xgb_3",
+      "kind": "xgb",
+      "level": "eda",
+      "depth": 3,
+      "accuracy": 0.8230337078651685,
+      "precision": 0.8024691358024691,
+      "recall": 0.7142857142857143,
+      "f1": 0.7558139534883721,
+      "roc_auc": 0.8840730264420469,
+      "brier": 0.12280347201895557,
+      "log_loss": 0.3953959958622118,
+      "confusion_matrix": [
+        [
+          391,
+          48
+        ],
+        [
+          78,
+          195
+        ]
+      ],
+      "accuracy_ci95": [
+        0.7932887195620335,
+        0.8493115428423865
+      ],
+      "passengers": 712,
+      "fold_accuracy_std": 0.023896940565066683
+    },
+    {
+      "name": "basic_torch_16",
+      "kind": "torch",
+      "level": "basic",
+      "hidden": 16,
+      "epochs": 180,
+      "lr": 0.01,
+      "weight_decay": 0.03,
+      "accuracy": 0.8230337078651685,
+      "precision": 0.8295964125560538,
+      "recall": 0.6776556776556777,
+      "f1": 0.7459677419354839,
+      "roc_auc": 0.8557327258921792,
+      "brier": 0.13146881313781722,
+      "log_loss": 0.43127994482021337,
+      "confusion_matrix": [
+        [
+          401,
+          38
+        ],
+        [
+          88,
+          185
+        ]
+      ],
+      "accuracy_ci95": [
+        0.7932887195620335,
+        0.8493115428423865
+      ],
+      "passengers": 712,
+      "fold_accuracy_std": 0.018108986996854946
+    },
+    {
+      "name": "extended_xgb_2",
+      "kind": "xgb",
+      "level": "extended",
+      "depth": 2,
+      "accuracy": 0.8216292134831461,
+      "precision": 0.7744360902255639,
+      "recall": 0.7545787545787546,
+      "f1": 0.764378478664193,
+      "roc_auc": 0.8797675369429356,
+      "brier": 0.12406706317413639,
+      "log_loss": 0.4011469649385175,
+      "confusion_matrix": [
+        [
+          379,
+          60
+        ],
+        [
+          67,
+          206
+        ]
+      ],
+      "accuracy_ci95": [
+        0.7918056276471547,
+        0.8480007205728987
+      ],
+      "passengers": 712,
+      "fold_accuracy_std": 0.024501288549680818
+    },
+    {
+      "name": "basic_torch_32",
+      "kind": "torch",
+      "level": "basic",
+      "hidden": 32,
+      "epochs": 120,
+      "lr": 0.01,
+      "weight_decay": 0.1,
+      "accuracy": 0.8216292134831461,
+      "precision": 0.8230088495575221,
+      "recall": 0.6813186813186813,
+      "f1": 0.7454909819639278,
+      "roc_auc": 0.854814888983454,
+      "brier": 0.1323146542257131,
+      "log_loss": 0.4341530028249292,
+      "confusion_matrix": [
+        [
+          399,
+          40
+        ],
+        [
+          87,
+          186
+        ]
+      ],
+      "accuracy_ci95": [
+        0.7918056276471547,
+        0.8480007205728987
+      ],
+      "passengers": 712,
+      "fold_accuracy_std": 0.022064159365478387
+    },
+    {
+      "name": "extended_xgb_3",
+      "kind": "xgb",
+      "level": "extended",
+      "depth": 3,
+      "accuracy": 0.8188202247191011,
+      "precision": 0.7834645669291339,
+      "recall": 0.7289377289377289,
+      "f1": 0.7552182163187856,
+      "roc_auc": 0.8842565938237921,
+      "brier": 0.12199592540110547,
+      "log_loss": 0.39505799101799927,
+      "confusion_matrix": [
+        [
+          384,
+          55
+        ],
+        [
+          74,
+          199
+        ]
+      ],
+      "accuracy_ci95": [
+        0.7888413485785873,
+        0.8453771712727317
+      ],
+      "passengers": 712,
+      "fold_accuracy_std": 0.011956140211823833
+    },
+    {
+      "name": "basic_xgb_2",
+      "kind": "xgb",
+      "level": "basic",
+      "depth": 2,
+      "accuracy": 0.8188202247191011,
+      "precision": 0.8025210084033614,
+      "recall": 0.6996336996336996,
+      "f1": 0.7475538160469667,
+      "roc_auc": 0.8722871661368244,
+      "brier": 0.12935117822590822,
+      "log_loss": 0.41307061209352414,
+      "confusion_matrix": [
+        [
+          392,
+          47
+        ],
+        [
+          82,
+          191
+        ]
+      ],
+      "accuracy_ci95": [
+        0.7888413485785873,
+        0.8453771712727317
+      ],
+      "passengers": 712,
+      "fold_accuracy_std": 0.03385474057527767
+    },
+    {
+      "name": "eda_xgb_2",
+      "kind": "xgb",
+      "level": "eda",
+      "depth": 2,
+      "accuracy": 0.8132022471910112,
+      "precision": 0.7777777777777778,
+      "recall": 0.717948717948718,
+      "f1": 0.7466666666666667,
+      "roc_auc": 0.8795797975752417,
+      "brier": 0.124058544182833,
+      "log_loss": 0.4001315357903952,
+      "confusion_matrix": [
+        [
+          383,
+          56
+        ],
+        [
+          77,
+          196
+        ]
+      ],
+      "accuracy_ci95": [
+        0.7829202515319791,
+        0.8401226115818716
+      ],
+      "passengers": 712,
+      "fold_accuracy_std": 0.02154088400352598
+    },
+    {
+      "name": "basic_xgb_3",
+      "kind": "xgb",
+      "level": "basic",
+      "depth": 3,
+      "accuracy": 0.8132022471910112,
+      "precision": 0.7966101694915254,
+      "recall": 0.6886446886446886,
+      "f1": 0.7387033398821218,
+      "roc_auc": 0.8742897193922252,
+      "brier": 0.12870170506321038,
+      "log_loss": 0.41017438866014694,
+      "confusion_matrix": [
+        [
+          391,
+          48
+        ],
+        [
+          85,
+          188
+        ]
+      ],
+      "accuracy_ci95": [
+        0.7829202515319791,
+        0.8401226115818716
+      ],
+      "passengers": 712,
+      "fold_accuracy_std": 0.029058297733653038
+    },
+    {
+      "name": "extended_torch_16",
+      "kind": "torch",
+      "level": "extended",
+      "hidden": 16,
+      "epochs": 180,
+      "lr": 0.01,
+      "weight_decay": 0.03,
+      "accuracy": 0.8117977528089888,
+      "precision": 0.7768924302788844,
+      "recall": 0.7142857142857143,
+      "f1": 0.7442748091603053,
+      "roc_auc": 0.8663963219771875,
+      "brier": 0.13671698125877527,
+      "log_loss": 0.5038215482263348,
+      "confusion_matrix": [
+        [
+          383,
+          56
+        ],
+        [
+          78,
+          195
+        ]
+      ],
+      "accuracy_ci95": [
+        0.7814414999992116,
+        0.8388074489302724
+      ],
+      "passengers": 712,
+      "fold_accuracy_std": 0.035319574261686394
+    },
+    {
+      "name": "extended_torch_32",
+      "kind": "torch",
+      "level": "extended",
+      "hidden": 32,
+      "epochs": 120,
+      "lr": 0.01,
+      "weight_decay": 0.1,
+      "accuracy": 0.8117977528089888,
+      "precision": 0.7725490196078432,
+      "recall": 0.7216117216117216,
+      "f1": 0.7462121212121212,
+      "roc_auc": 0.8627333183141839,
+      "brier": 0.13927793351532186,
+      "log_loss": 0.5038804929082725,
+      "confusion_matrix": [
+        [
+          381,
+          58
+        ],
+        [
+          76,
+          197
+        ]
+      ],
+      "accuracy_ci95": [
+        0.7814414999992116,
+        0.8388074489302724
+      ],
+      "passengers": 712,
+      "fold_accuracy_std": 0.0369706908201938
+    },
+    {
+      "name": "basic_forest",
+      "kind": "forest",
+      "level": "basic",
+      "accuracy": 0.8061797752808989,
+      "precision": 0.7973568281938326,
+      "recall": 0.663003663003663,
+      "f1": 0.724,
+      "roc_auc": 0.8688202458134119,
+      "brier": 0.1302828237709713,
+      "log_loss": 0.4257233973079822,
+      "confusion_matrix": [
+        [
+          393,
+          46
+        ],
+        [
+          92,
+          181
+        ]
+      ],
+      "accuracy_ci95": [
+        0.7755324301910076,
+        0.8335408620010081
+      ],
+      "passengers": 712,
+      "fold_accuracy_std": 0.026233935687322348
+    },
+    {
+      "name": "basic_torch_0",
+      "kind": "torch",
+      "level": "basic",
+      "hidden": 0,
+      "epochs": 200,
+      "lr": 0.01,
+      "weight_decay": 0.03,
+      "accuracy": 0.7991573033707865,
+      "precision": 0.7663934426229508,
+      "recall": 0.684981684981685,
+      "f1": 0.723404255319149,
+      "roc_auc": 0.8521114420886631,
+      "brier": 0.1423507276876143,
+      "log_loss": 0.4491016003609898,
+      "confusion_matrix": [
+        [
+          382,
+          57
+        ],
+        [
+          86,
+          187
+        ]
+      ],
+      "accuracy_ci95": [
+        0.7681590874045232,
+        0.8269446338656572
+      ],
+      "passengers": 712,
+      "fold_accuracy_std": 0.00812184097430975
+    }
+  ]
+}

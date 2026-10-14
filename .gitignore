@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+.env
+kaggle.json
+access_token
+data/*.csv
+data/*.zip
+artifacts/eda/
+/learning/
+
+/elta-titanic-submission.zip

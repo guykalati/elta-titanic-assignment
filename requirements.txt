@@ -1,0 +1,5 @@
+-r requirements-eda.txt
+torch==2.14.1
+xgboost==3.4.1
+streamlit==1.65.0
+joblib==1.6.0
